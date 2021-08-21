@@ -194,7 +194,7 @@ describe('SqrtPriceMath', () => {
       expect(sqrtQ).to.eq('88031291682515930659493278152')
     })
 
-    it('output amount of 0.1 token1', async () => {
+    it('output amount of 0.1 token0', async () => {
       const sqrtQ = await sqrtPriceMath.getNextSqrtPriceFromOutput(
         encodePriceSqrt(1, 1),
         expandTo18Decimals(1),
